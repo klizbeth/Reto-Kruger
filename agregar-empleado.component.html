@@ -1,0 +1,40 @@
+
+<div class="card">
+   <div class="card-header">
+        Agregar Empleado
+    </div>
+    <div class="card-body">
+      <form [formGroup]="formularioDeEmpleados" (ngSubmit)="enviarDatos()" >
+
+        <div class="mb-3">
+          <label for="" class="form-label">Cedula: </label>
+          <input type="number"
+            class="form-control" name="" formControlName="cedula" id="" aria-describedby="helpId" placeholder="Ingresar cedula">
+        </div>
+
+        <div class="mb-3">
+          <label for="" class="form-label">Nombres: </label>
+          <input type="text"
+            class="form-control" name="" formControlName="nombres" id="" aria-describedby="helpId" placeholder="Ingresar dos nombres">
+        </div>
+
+        <div class="mb-3">
+          <label for="" class="form-label">Apellidos: </label>
+          <input type="text"
+            class="form-control" name="" formControlName="apellidos" id="" aria-describedby="helpId" placeholder="Ingresar dos apellidos">
+        </div>
+
+        <div class="mb-3">
+          <label for="" class="form-label">Correo: </label>
+          <input type="email"
+            class="form-control" name="" formControlName="correo" id="" aria-describedby="helpId" placeholder="Ingresar correo electronico">
+        </div>
+
+        <div class="btn-group" role="group" aria-label="">
+          <button type="submit" class="btn btn-success">Agregar</button>
+
+          <button type="button" class="btn btn-primary">Cancelar</button>
+        </div>
+      </form>    
+    </div>
+</div>
